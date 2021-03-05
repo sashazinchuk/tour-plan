@@ -637,5 +637,35 @@ template {
   .logo {
     width: 100px;
   }
+  .hotel-rating {
+    display: none;
+  }
+  .hotel-name {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .hotel-name-wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hotel-name__stars {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    margin-bottom: 16px;
+  }
+  .hotel-name__title {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .hotel-name__offer {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-bottom: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
