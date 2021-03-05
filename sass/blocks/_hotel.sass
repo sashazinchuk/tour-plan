@@ -1,5 +1,11 @@
 .hotel
   padding: 23px 0 70px
+  &-info
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__info
+    margin-bottom: 20px
   &-name
     &-wrapper
       display: flex
@@ -20,6 +26,22 @@
   &-description
     font-size: 12px
     line-height: 1.25
+  &-rating
+    max-width: 65px
+    min-height: 45px
+    text-align: center
+    background-color: $primary
+    color: $white
+    border-radius: 4px
+    &__text
+      font-weight: 600
+      font-size: 8px
+      line-height: 1.25
+    &__count
+      font-size: 14px
+      &_small
+        font-size: 10px
+
 .offer
   padding: 4px 9px
   background-color: $primary

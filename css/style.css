@@ -476,6 +476,22 @@ template {
   padding: 23px 0 70px;
 }
 
+.hotel-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hotel__info {
+  margin-bottom: 20px;
+}
+
 .hotel-name-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -511,6 +527,29 @@ template {
 .hotel-description {
   font-size: 12px;
   line-height: 1.25;
+}
+
+.hotel-rating {
+  max-width: 65px;
+  min-height: 45px;
+  text-align: center;
+  background-color: #EC1F46;
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+.hotel-rating__text {
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 1.25;
+}
+
+.hotel-rating__count {
+  font-size: 14px;
+}
+
+.hotel-rating__count_small {
+  font-size: 10px;
 }
 
 .offer {
