@@ -7,6 +7,7 @@ body {
   font-family: 'Mulish', sans-serif;
   font-size: 14px;
   line-height: 1.3;
+  background-color: #F5FAFE;
   color: #333333;
 }
 
@@ -443,6 +444,32 @@ template {
 
 .user__name {
   margin-left: 18px;
+}
+
+.breadcrumb {
+  padding: 18px 0;
+}
+
+.breadcrumb-menu__item:not(:last-child)::after {
+  content: '/';
+  margin-right: 4px;
+}
+
+.breadcrumb-menu__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.breadcrumb-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 @media (max-width: 1200px) {
