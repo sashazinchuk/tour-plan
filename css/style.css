@@ -562,6 +562,55 @@ template {
   text-align: center;
 }
 
+.swiper-container {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  border-radius: 8px;
+}
+
+.swiper-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 122, 223, 0.48)), to(rgba(255, 255, 255, 0.128)));
+  background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+}
+
+.slider {
+  max-width: 728px;
+}
+
+.slider-button {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  z-index: 99;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.slider-button_prev {
+  background-image: url("../img/icon/arrow-prev.svg");
+  left: 18px;
+}
+
+.slider-button_next {
+  background-image: url("../img/icon/arrow-next.svg");
+  right: 18px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;

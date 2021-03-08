@@ -50,3 +50,41 @@
   font-weight: 600
   font-size: 10px
   text-align: center
+
+.swiper
+  &-container
+    position: relative
+    width: 100%
+    height: 450px
+    border-radius: 8px
+    &::after
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      z-index: 10
+      background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
+
+.slider
+  max-width: 728px
+  &-button
+    position: absolute
+    width: 30px
+    height: 30px
+    z-index: 99
+    top: 50%
+    transform: translateY(-50%)
+    background-repeat: no-repeat
+    background-position: center
+    background-size: 10px
+    background-color: transparent
+    border: none
+    cursor: pointer
+    &_prev
+      background-image: url('../img/icon/arrow-prev.svg')
+      left: 18px
+    &_next
+      background-image: url('../img/icon/arrow-next.svg')
+      right: 18px
