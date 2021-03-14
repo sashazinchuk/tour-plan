@@ -773,10 +773,19 @@ template {
 }
 
 .map {
+  position: relative;
   border-radius: 10px;
   overflow: hidden;
   width: 347px;
   height: 213px;
+}
+
+.map__google {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
 @media (max-width: 1200px) {
