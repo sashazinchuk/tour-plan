@@ -13,7 +13,7 @@ const swiper = new Swiper('.swiper-container', {
   },
 });
 
-const swiper = new Swiper('.reviews-slider', {
+const swiperReviews = new Swiper('.reviews-slider', {
   // Optional parameters
   loop: true,
 
