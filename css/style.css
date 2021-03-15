@@ -982,12 +982,102 @@ template {
   right: 0;
 }
 
+.activities {
+  padding: 60px 0 83px;
+}
+
+.activities__title {
+  margin: 0 0 57px 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 255px;
+  height: 255px;
+  padding: 24px 26px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
+}
+
+.card__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card__title {
+  margin-top: auto;
+  margin-bottom: 18px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #ffffff;
+}
+
+.card__button {
+  padding: 7px 22px;
+  border-radius: 4px;
+  background-color: #EC1F46;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  border: none;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
   }
   .slider {
     max-width: 590px;
+  }
+  .card {
+    width: 230px;
+    height: 230px;
   }
 }
 
@@ -1040,6 +1130,17 @@ template {
   }
   .map {
     width: 340px;
+  }
+  .activities__card {
+    margin-bottom: 20px;
+  }
+  .cards {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .card {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
   }
 }
 
@@ -1176,6 +1277,10 @@ template {
 @media (max-width: 480px) {
   .slider {
     height: 250px;
+  }
+  .card {
+    -ms-flex-preferred-size: 90%;
+        flex-basis: 90%;
   }
 }
 
