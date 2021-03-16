@@ -1278,9 +1278,22 @@ template {
   .slider {
     height: 250px;
   }
+  .activities {
+    padding: 40px 0 60px;
+  }
+  .activities__title {
+    margin-bottom: 36px;
+    font-size: 18px;
+  }
+  .cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .card {
     -ms-flex-preferred-size: 90%;
         flex-basis: 90%;
+    height: 255px;
   }
 }
 
