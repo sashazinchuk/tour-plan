@@ -870,6 +870,10 @@ template {
   cursor: pointer;
 }
 
+.parallax-window {
+  background: transparent;
+}
+
 .reviews {
   padding: 40px 0 70px;
 }
