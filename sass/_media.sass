@@ -49,6 +49,10 @@
     flex-wrap: wrap
   .card
     flex-basis: 48%
+  .reviews
+    &-slider
+      &__item
+        max-width: 580px
 @media (max-width: 768px)
   .container,
   .newsletter-wrapper
@@ -96,6 +100,21 @@
       padding: 76px 0 83px
     &__title
       margin-bottom: 37px
+  .reviews
+    &__title
+      margin-bottom: 50px
+      font-size: 30px
+    &-slider
+      &__button
+        top: 30px
+        &_prev
+          left: 50%
+          transform: translateX(-50%)
+          margin-left: -75px
+        &_next
+          right: 50%
+          transform: translateX(50%)
+          margin-right: -75px
 
 @media (max-width: 576px)
   .container,
@@ -131,6 +150,15 @@
         font-size: 30px
   .subscribe
     width: 280px
+  .reviews
+    padding-bottom: 50px
+    &__title
+      font-size: 18px
+    &-slider
+      &__item
+        padding: 0 31px 36px
+        &::before, &::after
+          display: none
 @media (max-width: 480px)
   .hotel
     &-slider
@@ -145,6 +173,9 @@
   .card
     flex-basis: 90%
     height: 255px
+  .reviews
+    &__title
+      margin-bottom: 42px
 @media (max-width: 400px)
   .hotel
     &-slider
