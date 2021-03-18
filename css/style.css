@@ -889,6 +889,7 @@ template {
 }
 
 .reviews-slider__item {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -908,6 +909,28 @@ template {
   background-color: #ffffff;
   border-radius: 8px;
   margin-top: 45px;
+}
+
+.reviews-slider__item::before {
+  position: absolute;
+  content: '';
+  top: 13px;
+  left: 64px;
+  width: 70px;
+  height: 47px;
+  background-image: url("../img/icon/quote-left.svg");
+  background-repeat: no-repeat;
+}
+
+.reviews-slider__item::after {
+  position: absolute;
+  content: '';
+  top: 118px;
+  right: 60px;
+  width: 70px;
+  height: 47px;
+  background-image: url("../img/icon/quote-right.svg");
+  background-repeat: no-repeat;
 }
 
 .reviews-slider__profile {
@@ -952,6 +975,8 @@ template {
 }
 
 .reviews-slider__text {
+  margin: 0;
+  max-width: 537px;
   font-weight: normal;
   font-size: 12px;
   line-height: 1.6;
