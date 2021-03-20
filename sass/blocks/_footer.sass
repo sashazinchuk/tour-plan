@@ -1,0 +1,102 @@
+.footer
+  background-color: $dark
+  padding: 108px 0 46px
+  color: $white
+  &-wrapper
+    display: grid
+    grid-template-columns: repeat(4, minmax(min-content, 1fr))
+    grid-gap: 20px
+    grid-auto-rows: minmax(40px, min-content)
+    align-items: start
+  &-logo
+    max-width: 166px
+    grid-row: 1 / 3
+    align-self: center
+    &__img
+      width: 100%
+  &__categories
+    grid-row: 1 / 4
+  &-social
+    grid-row: 2 / 4
+    grid-column: span 2
+    display: flex
+    align-items: center
+    &__links
+      display: flex
+      align-items: center
+      justify-content: space-between
+      min-width: 83px
+  &-details
+    grid-column: span 2
+    &__img
+      min-width: 40px
+  &__contacts
+    &-form
+      grid-column: span 2
+  &-form
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+    &__info
+      font-weight: 700
+      font-size: 12px
+      color: $grey
+  &-bottom
+    grid-column: 2 / 5
+  &__title
+    margin: 0 0 20px 0
+    font-size: 18px
+    font-weight: 700
+    text-transform: uppercase
+    &_inline
+      margin: 0 43px 0 0
+    &_mb
+      margin-bottom: 34px
+  &__ul
+    margin: 0
+    padding: 0
+    list-style: none
+  &__item
+    display: flex
+    // align-items: flex-start
+    margin-bottom: 5px
+    font-size: 14px
+    color: $grey
+    &_mb
+      margin-bottom: 20px
+  &__link
+    text-decoration: none
+    color: inherit
+  &__text
+    color: $grey
+    margin: 0 0 22px 0
+  &__input
+    flex-basis: 48%
+    border-radius: 4px
+    border: none
+    background-color: $white
+    padding: 0 23px 0
+    height: 50px
+    margin-bottom: 15px
+    &:focus
+      outline: none
+  &__message
+    border-radius: 4px
+    padding: 18px 23px
+    background-color: $white
+    flex-basis: 100%
+    border: none
+    margin-bottom: 22px
+    &:focus
+      outline: none
+  &__button
+    background-color: $primary
+    color: $white
+    min-width: 160px
+    min-height: 50px
+    padding: 18px
+    border: none
+    border-radius: 4px
+    font-size: 12px
+    font-weight: 700
