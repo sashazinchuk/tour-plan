@@ -25,3 +25,8 @@ const reviewsSlider = new Swiper('.reviews-slider', {
 });
 
 $('.parallax-window').parallax({imageSrc: '../img/bg-newsletter.jpg'});
+
+const menuButton = document.querySelector('.humburger-menu');
+menuButton.addEventListener('click', function() {
+  document.querySelector('.header-bottom').classList.toggle('header-bottom_visible');
+});

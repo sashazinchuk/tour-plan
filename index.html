@@ -15,20 +15,20 @@
 </head>
 <body>
   <!-- header (start) -->
-  <header class="header">
+  <header class="header header_mobile_fixed">
     <div class="container">
       <!-- header-top (start) -->
       <div class="header-top">
         <a href="#" class="logo">
           <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__img">
         </a>
-        <form action="#" class="search header__search">
+        <form action="#" class="search header__search header__search_mobile_hidden">
           <input class="search__input" type="text" placeholder="Search Location">
           <button class="search__button">
             <img src="img/icon/search.svg" alt="Icon: search">
           </button>
         </form>
-        <a href="#" class="user header__user">
+        <a href="#" class="user header__user header__user_mobile_hidden">
           <img src="img/avatar.jpg" alt="User: Nathan" class="user__avatar">
           <span class="user__name">Nathan</span>
         </a>
@@ -45,6 +45,28 @@
       <div class="container">
         <nav class="header-menu">
           <ul class="header-menu-list">
+            <li class="header-menu__item header-menu__item_mobile_visible">
+              <a href="#"
+                class="user header__user header__user_mobile_visible">
+                <img src="img/avatar.jpg"
+                  alt="User: Nathan"
+                  class="user__avatar">
+                <span
+                  class="user__name">Nathan</span>
+              </a>
+            </li>
+            <li class="header-menu__item header-menu__item_mobile_visible">
+              <form action="#"
+                class="search header__search header__search_mobile_visible">
+                <input class="search__input"
+                  type="text"
+                  placeholder="Search Location">
+                <button class="search__button">
+                  <img src="img/icon/search.svg"
+                    alt="Icon: search">
+                </button>
+              </form>
+            </li>
             <li class="header-menu__item">
               <a href="#"
                 class="header-menu__link">All
