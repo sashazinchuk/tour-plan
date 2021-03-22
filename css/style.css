@@ -1482,6 +1482,7 @@ template {
     bottom: 0;
     top: 78px;
     padding-top: 30px;
+    overflow: scroll;
   }
   .header__search_mobile_hidden, .header__user_mobile_hidden {
     display: none;
